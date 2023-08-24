@@ -18,7 +18,7 @@ function Home() {
             className="profile w-80 rounded-full drop-shadow-4xl border-gray-900 border-4 dark:drop-shadow-5xl"
           />
         </div>
-        <div className="md:w-1/2 md:mx-6 w-9/12 md:text-start text-center mt-6 flex  flex-col items-center justify-center">
+        <div className="md:w-1/2 md:mx-6 w-9/12 md:text-start text-center mt-6 flex  flex-col md:items-start items-center justify-center">
           <div className="text-xl font-bold mb-5">Hi there, I'm Mr. Guu</div>
           <div className="sm:text-sm font-bold text-xs">
             A React front-end developer based in Myanmar. I'm passionate about
