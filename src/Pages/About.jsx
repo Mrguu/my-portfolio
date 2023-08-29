@@ -8,6 +8,7 @@ import tailwind from "../Images/tailwindIcon.png";
 import react from "../Images/reactIcon.png";
 import github from "../Images/githubIcon.png";
 import vite from "../Images/viteIcon.svg";
+import API from "../Images/API.png";
 
 function About() {
   return (
@@ -27,12 +28,15 @@ function About() {
             frameworks like Tailwind and Bootstrap to enhance my design
             capabilities. My focus on front-end development led me to master the
             React library, where I build dynamic and user-centric web
-            applications that seamlessly blend functionality and aesthetics.
-            From crafting responsive designs using CSS frameworks to creating
-            interactive interfaces with React, I'm dedicated to turning ideas
-            into engaging digital experiences. Inspired by the intersection of
-            technology and creativity, I'm eager to contribute my skills to
-            meaningful projects and leave a mark in the digital landscape.
+            applications that seamlessly blend functionality and aesthetics. I
+            also have experience working with APIs, integrating them to create
+            robust and interactive web experiences. From crafting responsive
+            designs using CSS frameworks to creating interactive interfaces with
+            React and harnessing the capabilities of APIs, I'm dedicated to
+            turning ideas into engaging digital experiences. Inspired by the
+            intersection of technology and creativity, I'm eager to contribute
+            my skills to meaningful projects and leave a mark in the digital
+            landscape.
           </div>
         </div>
       </div>
@@ -47,6 +51,7 @@ function About() {
           <img src={react} alt="" className="w-10 h-10" />
           <img src={github} alt="" className="w-10 h-10" />
           <img src={vite} alt="" className="w-10 h-10" />
+          <img src={API} alt="" className="w-10 h-10" />
         </div>
       </div>
     </div>
