@@ -8,19 +8,19 @@ function Home() {
   const { handleSwitch } = useContext(DarkContext);
   return (
     <div
-      className="flex h-full md:px-20 px-4 dark:bg-slate-900 dark:text-slate-100 "
+      className="flex h-full md:px-20 px-4 dark:bg-slate-900 dark:text-blue-500 "
       id="home">
       <div className="my-20 flex flex-col md:flex-row items-center justify-between ">
         <div>
           <img
             src={profile}
             alt="portfolioPhoto"
-            className="profile w-80 rounded-full drop-shadow-4xl border-gray-900 border-4 dark:drop-shadow-5xl"
+            className="profile sm:w-80 w-60  rounded-full drop-shadow-6xl border-gray-900 border-4 dark:drop-shadow-5xl"
           />
         </div>
         <div className="md:w-1/2 md:mx-6 w-9/12 md:text-start text-center mt-6 flex  flex-col md:items-start items-center justify-center">
           <div className="text-xl font-bold mb-5">Hi there, I'm Mr. Guu</div>
-          <div className="sm:text-sm font-bold text-xs">
+          <div className="sm:text-sm font-bold text-xs sm:text-justify justify-center">
             A React front-end developer based in Myanmar. I'm passionate about
             creating engaging web experiences using React to build user-friendly
             interfaces. Whether it's building interactive websites or responsive

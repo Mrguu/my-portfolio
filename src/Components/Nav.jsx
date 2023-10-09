@@ -43,7 +43,7 @@ function Nav() {
       </div>
       <div className="flex items-center">
         <div
-          className={`absolute md:static left-0 z-[-1] md:z-auto w-full md:w-auto bottom-0 md:right-0 mr-10w-full bg-white dark:bg-slate-900 top-14 text-center mx-2 md:transition-none transition-all ease-in duration-700 ${
+          className={`absolute md:static left-0 z-[-1] md:z-auto w-full md:w-auto bottom-0 md:right-0 mr-10 bg-white dark:bg-slate-900 top-14 text-center mx-2 md:transition-none transition-all ease-in duration-700 ${
             open ? "top-10 opacity-0" : "top-[-500px]"
           } opacity-100 md:opacity-100`}>
           <ul className={`md:flex justify-around `}>
@@ -66,7 +66,7 @@ function Nav() {
             strokeWidth="1.5"
             stroke="currentColor"
             onClick={handleSwitch}
-            className="w-6 h-6 md:static ml-3 hover:text-sky-500 absolute right-5 top-5">
+            className="w-6 h-6 md:static ml-3 hover:text-sky-500 absolute right-2 top-5">
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
