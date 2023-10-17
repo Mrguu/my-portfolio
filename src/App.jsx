@@ -7,6 +7,7 @@ import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
 import Footer from "./Components/Footer";
 import { DarkContext } from "./Context/DarkContext";
+import Loader from "./Components/Loader";
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -22,7 +23,18 @@ function App() {
       document.documentElement.classList.remove("dark");
     }
   }, [theme]);
-  return (
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    const loadpage = () => {
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 1000);
+    };
+    loadpage();
+  }, []);
+  return isLoading ? (
+    <Loader />
+  ) : (
     <div>
       <DarkContext.Provider value={{ handleSwitch }}>
         <Nav />

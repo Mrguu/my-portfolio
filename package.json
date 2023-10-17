@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "@vitejs/plugin-vue": "^4.3.1",
+    "aos": "^2.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-loading-skeleton": "^3.3.1",
     "react-scroll": "^1.8.9",
     "scroll-carousel-react": "^1.0.0"
   },

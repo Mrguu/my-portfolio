@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AboutPhoto from "../Images/About.png";
 import html from "../Images/htmlIcon.png";
 import css from "../Images/cssIcon.png";
@@ -15,6 +15,8 @@ import nextjs from "../Images/nextjs.png";
 import expressjs from "../Images/express.png";
 import nodejs from "../Images/nodejs.png";
 import mysql from "../Images/mysql.png";
+import "aos/dist/aos.css";
+import Aos from "aos";
 
 function About() {
   const teches = [
@@ -76,11 +78,20 @@ function About() {
     },
   ];
 
+  useEffect(() => {
+    Aos.init({
+      duration: 2000,
+      once: true,
+    });
+  }, []);
+
   return (
     <div
       className="text-center p-10 bg-white dark:bg-slate-900 dark:text-blue-500"
       id="about">
-      <div className="p-4 drop-shadow-4xl border-2 dark:drop-shadow-5xl bg-white  dark:bg-slate-800 dark:border-none">
+      <div
+        data-aos="zoom-in"
+        className="p-4 drop-shadow-4xl border-2 dark:drop-shadow-5xl bg-white  dark:bg-slate-800 dark:border-none">
         <div className="text-xl font-bold mb-12">About Me</div>
         <div className="flex md:flex-row flex-col justify-center mb-10">
           <div className="w-full md:w-1/3 mr-10 mb-4">
@@ -105,7 +116,9 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="my-10 p-4 drop-shadow-4xl border-2 bg-white dark:drop-shadow-5xl dark:bg-slate-800 dark:border-none">
+      <div
+        data-aos="fade-down"
+        className="my-10 p-4 drop-shadow-4xl border-2 bg-white dark:drop-shadow-5xl dark:bg-slate-800 dark:border-none">
         <div className="text-xl font-bold mb-5">Use Tech</div>
         <ScrollCarousel
           className="flex justify-around flex-wrap"
